@@ -1,0 +1,192 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+    <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script> 
+</head> 
+<body> 
+    <div class="mermaid"> 
+        classDiagram 
+        class Adminlog { 
+            + logData(data: any): void 
+            + clearLog(): void 
+        } 
+
+        class AccessRights {
+            + setAccessRights(): void
+            + getAccessRights(): void
+            + updateAccessRights(): void
+            + removeAccessRights(): void
+        }
+
+        class AddingEmployee {
+            + addEmployee(): void
+            + deleteEmployee(): void
+            + updateEmployee(): void
+            + getEmployeeDetails(): void
+        }
+
+        class CreateBackup {
+            + createBackup(): void
+            + scheduleBackup(): void
+            + restoreBackup(): void
+            + deleteBackup(): void
+        }
+
+        class EditingPersonalAccount {
+            + editProfile(): void
+            + changePassword(): void
+            + updateEmail(): void
+            + uploadProfilePicture(): void
+        }
+
+        class ListOfApplicants {
+            + fetchApplicantsList(): void
+            + filterApplicants(): void
+            + sortApplicants(): void
+            + displayApplicantDetails(): void
+        }
+
+        class ListOfEmployees {
+            + fetchEmployeesList(): void
+            + filterEmployees(): void
+            + sortEmployees(): void
+            + displayEmployeeDetails(): void
+        }
+
+        class StatisticsOfApplicants {
+            + fetchApplicantsStatistics(): void
+            + analyzeApplicantsData(): void
+            + generateReport(): void
+            + visualizeStatistics(): void
+        }
+
+        class StudentsPage {
+            + displayStudents(): void
+            + enrollStudent(): void
+            + graduateStudent(): void
+            + manageStudentAttendance(): void
+        }
+
+        class AboutTheProgram {
+            + fetchProgramDetails(): void
+            + displayProgramBenefits(): void
+            + showProgramRequirements(): void
+            + updateProgramInformation(): void
+        }
+
+        class AddPersonalDocuments {
+            + uploadDocuments(): void
+            + deleteDocuments(): void
+            + viewDocumentDetails(): void
+            + shareDocuments(): void
+        }
+
+        class ApplicationSubmission {
+            + submitApplication(): void
+            + verifyApplicationData(): void
+            + processApplicationPayment(): void
+            + sendApplicationConfirmation(): void
+        }
+
+        class CheckStatus {
+            + checkApplicationStatus(): void
+            + updateApplicationStatus(): void
+            + trackApplicationProgress(): void
+            + notifyStatusChange(): void
+        }
+
+        class Entrance {
+            + login(): void
+            + logout(): void
+            + register(): void
+            + recoverPassword(): void
+        }
+
+        class Authorization {
+            + authenticateUser(): void
+            + authorizeAccess(): void
+            + validateToken(): void
+            + revokeAccess(): void
+        }
+
+        class Logo {
+            + displayLogo(): void
+            + animateLogo(): void
+            + resizeLogo(): void
+            + changeLogoColor(): void
+        }
+
+        class RegistrationApplicant {
+            + registerApplicant(): void
+            + validateRegistrationData(): void
+            + sendRegistrationConfirmation(): void
+            + processRegistrationPayment(): void
+        }
+
+        class UserController {
+            + createUser(): void
+            + updateUser(): void
+            + deleteUser(): void
+            + manageUserRoles(): void
+        }
+
+        class AuthServer {
+            + startServer(): void
+            + stopServer(): void
+            + configureServer(): void
+            + handleRequests(): void
+            + fetchFromDatabase(): void
+        }
+
+        class Index {
+            + initializeApp(): void
+            + configureRoutes(): void
+            + startListening(): void
+            + handleRequests(): void
+            + fetchFromDatabase(): void
+        }
+
+        Adminlog --> AccessRights: Uses
+        AccessRights --> AuthServer: Fetch data
+        AccessRights --> Index: Fetch data
+        AddingEmployee --> AuthServer: Fetch data
+        AddingEmployee --> Index: Fetch data
+        CreateBackup --> AuthServer: Fetch data
+        CreateBackup --> Index: Fetch data
+        EditingPersonalAccount --> AuthServer: Fetch data
+        EditingPersonalAccount --> Index: Fetch data
+        ListOfApplicants --> AuthServer: Fetch data
+        ListOfApplicants --> Index: Fetch data
+        ListOfEmployees --> AuthServer: Fetch data
+        ListOfEmployees --> Index: Fetch data
+        StatisticsOfApplicants --> AuthServer: Fetch data
+        StatisticsOfApplicants --> Index: Fetch data
+        StudentsPage --> AuthServer: Fetch data
+        StudentsPage --> Index: Fetch data
+        AboutTheProgram --> AuthServer: Fetch data
+        AboutTheProgram --> Index: Fetch data
+        AddPersonalDocuments --> AuthServer: Fetch data
+        AddPersonalDocuments --> Index: Fetch data
+        ApplicationSubmission --> AuthServer: Fetch data
+        ApplicationSubmission --> Index: Fetch data
+        CheckStatus --> AuthServer: Fetch data
+        CheckStatus --> Index: Fetch data
+        Entrance --> AuthServer: Fetch data
+        Entrance --> Index: Fetch data
+        Authorization --> AuthServer: Fetch data
+        Authorization --> Index: Fetch data
+        Logo --> AuthServer: Fetch data
+        Logo --> Index: Fetch data
+        RegistrationApplicant --> AuthServer: Fetch data
+        RegistrationApplicant --> Index: Fetch data
+        UserController --> AuthServer: Fetch data
+        UserController --> Index: Fetch data
+        AuthServer --> Index: Connects
+        AuthServer --> PGConnection: Connects
+        Index --> PGConnection: Connects
+    </div> 
+    <script> 
+        mermaid.initialize({ startOnLoad: true }); 
+    </script> 
+</body> 
+</html>

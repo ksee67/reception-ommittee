@@ -1,0 +1,44 @@
+###
+DELETE http://localhost:4000/logout
+Content-Type: application/json
+
+{
+  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiZW1haWwiOiJla2F0ZXJpbmFfcGV0cm92IiwicGFzc3dvcmQiOiJTZWN1cmVQYXNzd29yZDQ1NiEiLCJpYXQiOjE3MDE2Nzc2NTUsImV4cCI6MTcwMTY3NzcxNX0.QKF0iGBItMzXLhYzqZY_bLRaLkj_yzviEuJHuOWLNDc"
+}
+
+###
+POST http://localhost:4000/token
+Content-Type: application/json
+
+{
+  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiZW1haWwiOiJla2F0ZXJpbmFfcGV0cm92IiwicGFzc3dvcmQiOiJTZWN1cmVQYXNzd29yZDQ1NiEiLCJpYXQiOjE3MDE2Nzc2MDl9.EnecYTOlLU08BXtt-AtH6XXUvb2sRo5QtG7YRtba0_M"
+}
+
+###
+POST http://localhost:4000/login
+Content-Type: application/json
+
+{
+  "email": "kscerus@mail.ru",
+  "password": "Pass789y!"
+}
+
+
+###
+GET http://localhost:4000/current-user
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwiZW1haWwiOiJpdmFuQGV4YW1wbGUuY29tIiwicGFzc3dvcmQiOiJzZWNyZXRQYXNzd29yZCIsImlhdCI6MTcwMTYyNDg2MywiZXhwIjoxNzAxNjI0OTIzfQ.S9NGs2X7tvhlAkAmGnj_LWGTO7yOczpGZCt2DWVNxsI
+
+###
+
+POST http://localhost:4000/register
+Content-Type: application/json
+
+{
+  "email": "kd222@mail.com",
+  "password": "Pa$$w0rd",
+  "surname": "Ванюков",
+  "firstName": "Олег",
+  "middleName": "Трофимович",
+  "dateOfBirth": "2004-02-28",
+  "postId": 3
+}

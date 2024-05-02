@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="../../public/images/icon.png" />
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../styles/styles.css">
+    <link rel="stylesheet" href="../../styles/header.css">
+    <title>План приема</title>
+</head>
+<body>
+    <header class="bg-primary py-3">
+        <div class="container d-flex justify-content-between align-items-center">
+            <div class="logo text-white d-flex align-items-center">
+                <a href="main.html">
+                    <img src="../../../public/images/icon.png" style="height: 40px; width: 40px;" alt="Иконка" class="mr-2">
+                    <img src="../../../public/images/admission_committee.png" style="height: 40px; width: 120px;" alt="Название" class="mr-2"> 
+                </a>
+            </div>
+            <div class="nav">
+                <a href="Main.html" class="nav-item">Главная</a>
+                <a href="AdmissionPlan.html" class="nav-link btn active">План приема</a>
+                <a href="Entrance.html" class="nav-item">Куда поступить?</a>
+                <a href="Contacts.html" class="nav-item">Контакты</a>
+                <a href="Support.html" class="nav-item">Помощь</a>
+                <div class="nav-item dropdown">
+                    <button class="btn btn-light" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        <img src="../../../public/images/user_icon.png" alt="Личный кабинет" style="width: 34px; height: 34px;">
+                        Личный кабинет
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="PersonalAccount.html">Личный кабинет</a>
+                        <a class="dropdown-item" href="Statistics.html">Статистика</a>
+                        <a class="dropdown-item" href="ListOfEmployees.html">Сотрудники</a>
+                        <a class="dropdown-item" href="Settings.html">Настройки</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" id="signOut" href="#">Выйти</a>
+                    </div>            
+                </div>
+        </div>
+    </header>
+    <main class="py-5" style="margin-bottom: 100px;">
+        <div class="container">
+            <h1 class="text-center mb-4">План приема</h1 >
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card">
+                        <h3 class="mt-3 ml-3">1. Подготовка документов</h3>
+                        <p class="ml-3 mr-3 mb-3">Подготовьте следующие документы для приема:</p>
+                        <ul class="ml-3">
+                            <li>Заполненная анкета поступающего</li>
+                            <li>Копии документов об образовании</li>
+                            <li>Документы, подтверждающие личность</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card">
+                        <h3 class="mt-3 ml-3">2. Подача документов</h3>
+                        <p class="ml-3 mr-3 mb-3">Подайте документы в приемную комиссию следующим способам:</p>
+                        <ul class="ml-3">
+                            <li>Лично в приемной комиссии</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-md-6">
+                    <div class="card">
+                        <h3 class="mt-3 ml-3">3. Проведение вступительных испытаний</h3>
+                        <p class="ml-3 mr-3 mb-3">Пройдите вступительные экзамены по выбранной специальности или предметам.</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card">
+                        <h3 class="mt-3 ml-3">4. Получение результата</h3>
+                        <p class="ml-3 mr-3 mb-3">Ожидайте результатов приема и подготовьтесь к дальнейшим этапам.</p>
+                    </div>
+                </div>
+            </div>                  
+            <h3 class="mt-4 text-center" style="margin-left: 5px;">ВНИМАНИЕ! <b>До 14 августа 2024 года </b>осуществляется прием на <i>бюджетной основе</i>, и <b>до 16 сентября 2024 года</b> набор на<i> платной основе</i>.</h3>
+            <h1 class="mt-4 text-center">Информация для внебюджетной основы</h1>
+            <table class="table table-bordered mt-4">
+                <thead>
+                    <tr>
+                        <th>Годы обучения</th>
+                        <th>Плата за 1 учебный год</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>21/22 уч. год</td>
+                        <td>110000 руб</td>
+                    </tr>
+                    <tr>
+                        <td>22/23 уч. год</td>
+                        <td>120000 руб</td>
+                    </tr>
+                    <tr>
+                        <td>23/24 уч. год</td>
+                        <td>130000 руб</td>
+                    </tr>
+                    <tr>
+                        <td><strong>24/25 уч. год</strong></td>
+                        <td><strong>150000 руб</strong></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="row mt-4">
+                <div class="col-md-12 text-center">
+                    <img src="../../../public/images/viewing_the_stand.png" alt="Просмотр стенда" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-dark text-white py-3">
+        <div class="container text-center">
+            <div class="d-flex align-items-center justify-content-center mb-3">
+                <img src="../../../public/images/icon.png" style="height: 30px; width: 30px;" alt="Приемная комиссия" class="mr-2">
+                <div class="text-left">
+                    <p class="mb-0">Все права защищены © 2024</p>
+                </div>
+            </div>
+            <p>
+                <a href="Support.html">Помощь</a> |
+                <a href="Contacts.html">Контакты</a>
+            </p>
+            <div class="text-muted text-center"> <!-- серая надпись -->
+                <a href="Agreement.html">*Соглашение о пользовании информационной системой электронной приемной комиссии</a>
+            </div>
+        </div>
+    </footer>
+    <script src="../../scripts/logout.js"></script>
+    <script src="../../scripts/ForAdmin/AccessRights.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

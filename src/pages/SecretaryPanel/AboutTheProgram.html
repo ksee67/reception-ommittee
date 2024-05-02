@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="../../../public/images/icon.png" />
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" />
+    <link rel="stylesheet" href="../../styles/styles.css">
+    <link rel="stylesheet" href="../../styles/header.css">
+    <title>Поступление на специальность</title>
+</head>
+<body>
+    <header class="bg-primary py-3">
+        <div class="container d-flex justify-content-between align-items-center">
+            <div class="logo text-white d-flex align-items-center">
+
+                <a href="main.html">
+                    <img src="../../../public/images/icon.png" style="height: 40px; width: 40px;" alt="Иконка" class="mr-2">
+                    <img src="../../../public/images/admission_committee.png" style="height: 40px; width: 120px;" alt="Название" class="mr-2"> 
+                </a>
+            </div>
+        
+            <div class="nav">
+                <a href="Main.html" class="nav-item">Главная</a>
+                <a href="AdmissionPlan.html" class="nav-item">План приема</a>
+                <a href="Entrance.html" class="nav-link btn active">Куда поступить?</a>
+                <a href="Contacts.html" class="nav-item">Контакты</a>
+                <a href="Support.html" class="nav-item">Помощь</a>
+                <div class="nav-item dropdown">
+                    <button class="btn btn-light" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <img src="../../../public/images/user_icon.png" alt="Личный кабинет" style="width: 34px; height: 34px;">
+                        Личный кабинет
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="PersonalAccount.html">Мой профиль</a>
+                        <a class="dropdown-item" href="Statistics.html">Статистика</a>
+                        <a class="dropdown-item" href="ListOfApplicants.html">Заявки</a>
+                        <a class="dropdown-item" href="SupportService.html">Служба поддержки</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" id="signOut" href="#">Выйти</a>
+                    </div>       
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="py-5">
+        <div class="container mt-5" style="margin-top: -100px;">
+            <button style="margin-top: -50px; margin-bottom: 20px;" class="btn btn-secondary" onclick="goBack()">← Вернуться назад</button>
+            <div class="content-container">
+                <div style="margin-top: 0px;" class="text-container"> <!-- -->
+                    <h1 id="Specialty_Name" class="specialty-title">Название специальности</h1>
+                    <p id="Specialty_Code" class="direction-title">Направление специальности</p>
+                    <p id="Qualification_Name" class="qualification">Квалификация</p>
+                    <p id="Training_Duration" class="class-info">Срок обучения</p>
+                    <p id="Class_Name" class="class-info">На базе какого класса</p>
+                    <p id="Education_Form_Name" class="education-form">Форма обучения</p>
+                    <p id="Description" class="description">Описание специальности</p>
+                    <p  id="availableSeats" class="availableSeats">Количество мест:</p>
+                    <p  id="applicationCount" class="applicationCount">Количество поданных заявлений:</p>
+                    <p id="passingGrade" class="passingGrade">Проходной балл на текущий момент:</p>
+
+                </div>
+                <div class="image-container">
+                    <img id="programImage" alt="Изображение">
+                </div>
+            </div>
+            <div style="margin-top: 40px;">
+                <h1 style="border: 3px solid #515a6e; border-radius: 10px; padding: 10px; color: #515a6e;">Не определились с профессией?</h1>
+                <h3 style="text-align: left; margin-top: 20px;">Различные видеоролики помогут вам разобраться:</h3>
+                <iframe width="1160" height="715" src="https://www.youtube.com/embed/I2ngJShaCac" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div style="margin-top: 40px;">
+                <h1 style="border: 3px solid #515a6e; border-radius: 15px; padding: 10px; color: rgb(69, 158, 75);">Всё ещё не определились с профессией?</h1>
+                <h2>На сайте SkySmart вы можете пройти <a href="https://skysmart.ru/articles/useful/test-na-proforientaciyu-dlya-shkolnikov" target="_blank">тест на профориентацию</h2>
+            </div>
+        </div>
+    </main>
+    
+    <footer class="bg-dark text-white py-3">
+        <div class="container text-center">
+            <div class="d-flex align-items-center justify-content-center mb-3">
+                <img src="../../../public/images/icon.png" style="height: 30px; width: 30px;" alt="Приемная комиссия" class="mr-2">
+                <div class="text-left">
+                    <p class="mb-0">Все права защищены © 2024</p>
+                </div>
+            </div>
+            <p>
+                <a href="Support.html">Помощь</a> |
+                <a href="Contacts.html">Контакты</a>
+            </p>
+            <div class="text-muted text-center"> <!-- серая надпись -->
+                <a href="Agreement.html">*Соглашение о пользовании информационной системой электронной приемной комиссии</a>
+            </div>
+        </div>
+    </footer>
+    <script src="../../scripts/ForSecretary/AccessRights.js"></script>
+    <script src="../../scripts/ForSecretary/AboutTheProgram.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+</body>
+</html>

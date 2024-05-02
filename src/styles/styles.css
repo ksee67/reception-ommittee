@@ -1,0 +1,330 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: rgb(239, 245, 251);
+}
+
+.logo h2 {
+    margin: 0;
+}
+
+h1 {
+    color: #007bff;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-shadow: 2px 5px 4px rgba(0, 0, 0, 0.232);
+    font-weight: bolder;
+}
+
+.login button {
+    cursor: pointer;
+}
+
+img.rounded {
+    border-radius: 8px;
+}
+
+footer a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.form-control {
+    background-color: #ffffff;
+    border-color: #007bff;
+    color: #495057;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+.card:hover {
+    transform: scale(1.05); /* Увеличение карточки на 5% при наведении */
+    transition: transform 0.3s ease; /* Плавное изменение размера с анимацией */
+}
+.helper-icon {
+    font-size: 24px;
+    margin-right: 10px;
+}
+.shadow {
+    text-shadow: 2px 2px 4px #000000;
+}
+ /* Добавленные стили для страницы списка сотрудников */
+ .employees-container {
+    margin-top: 20px;
+}
+
+.employees-search {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.employees-search input {
+    flex-grow: 1;
+    margin-right: 10px;
+}
+
+.employees-filter {
+    display: flex;
+    align-items: center;
+}
+
+.employees-filter select {
+    margin-right: 10px;
+}
+
+.employees-list {
+    list-style: none;
+    padding: 0;
+}
+
+.employee-item {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.left-section {
+    margin-left: 80px;
+    margin-top: 120px;
+}
+
+.text2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.special-input {
+    padding: 10px;
+    width: 70%;
+    margin-right: 10px;
+}
+
+.voice-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.sorting {
+    margin-top: 10px;
+}
+
+.button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.filter {
+    margin-top: 10px;
+}
+
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 10px;
+}
+
+.details-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.pagination {
+    margin-top: 20px;
+}
+.header-container {
+    display: flex;
+    margin-top: -100px;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 0px;
+}
+
+.header-container img {
+    height: 300px;
+    width: auto;
+    margin-right: 170px; /* Используем margin-left вместо margin-right */
+}
+/* Иконки прослушивания и ввода */
+.voice-button i {
+    font-size: 18px;
+    color: rgb(51, 0, 255); 
+}
+
+.keyboard-button i {
+    color: blue; 
+}
+/* ПАГИНАЦИЯ *//* Добавим стили для пагинации */
+.pagination {
+    display: flex;
+    list-style: none;
+    gap: 5px;
+    justify-content: center;
+    margin-top: 20px; /* Расстояние между пагинацией и карточками */
+}
+
+.pagination button {
+    text-decoration: none;
+    padding: 8px 12px;
+    background-color: #007bff;
+    color: #fff;
+    border: 1px solid #007bff;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.pagination button:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+.pagination button.active {
+    background-color: #0056b3;
+    border-color: #0056b3;
+    color: #fff;
+    cursor: default;
+}
+
+/* Добавим стили для нового класса additional-info */
+.additional-info {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px;
+    background-color: #559fff;
+    box-shadow: #0056b3;
+    color: #fff;
+    border-radius: 0 0 0 5px;
+}
+.content-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.text-container {
+    width: 70%; /* Задайте нужную ширину */
+}
+
+.image-container {
+    margin-top: 100px;
+    width: 30%; /* Задайте нужную ширину */
+}
+
+.image-container img {
+    max-width: 100%; /* Чтобы изображение не превышало ширину блока */
+    height: auto; /* Чтобы сохранить пропорции изображения */
+}
+/* картинка  */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.7);
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    max-width: 45%;
+    max-height: 90%;
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+select-with-search {
+	padding: 8px;
+	font-size: 16px;
+	border: 1px solid #3167D9;
+	border-radius: 4px;
+	margin-bottom: 12px;
+  }
+
+#serviceSelect1:valid + .width-check::after {
+  content: attr(data-value); /* Значение, которое будет использоваться для определения ширины */
+  visibility: hidden; /* Скрыть текст элемента */
+  white-space: nowrap; /* Запретить перенос текста */
+}
+
+#serviceSelect1 + .width-check::after {
+  display: block;
+  position: absolute;
+  white-space: nowrap;
+  visibility: hidden;
+}
+
+#serviceSelect1 {
+  width: calc(100% - 1em); /* 1em - приблизительная ширина стрелки */
+
+}
+#paginationContainer button {
+    background-color: white;
+    color: black;
+    border: 1px solid lightgray;
+    padding: 5px 10px;
+    margin-right: 5px;
+    cursor: pointer;
+  }
+  
+  #paginationContainer button:hover {
+    background-color: rgb(133, 180, 255);
+    color: white;
+  }
+  
